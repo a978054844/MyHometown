@@ -1,0 +1,32 @@
+<root>
+    <Interfaces>
+		<Interface>  GameObject  </Interface>
+	</Interfaces>
+
+	<Properties>
+	  <!--发射玩家ID-->
+	  <launchID>
+	    <Type>  ENTITYID  </Type>
+	    <Flags>  ALL_CLIENTS  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </launchID>
+
+	  <!--接受玩家ID-->
+	  <track>
+	    <Type>  UINT8  </Type>
+	    <Flags>  CELL_PRIVATE  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </track>
+
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>

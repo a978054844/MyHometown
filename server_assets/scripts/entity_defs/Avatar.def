@@ -1,0 +1,80 @@
+<root>
+    <Interfaces>
+		<Interface>  Motion  </Interface>
+		<Interface>  GameObject  </Interface>
+		<Interface>  Animation  </Interface>
+		<Interface>  Skills  </Interface>
+	</Interfaces>
+
+	<Properties>
+
+	  <!--角色对应Account-->
+	  <Account>
+	    <Type>  ENTITYCALL  </Type>
+	    <Flags>  BASE  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </Account>
+
+	  <!--战场-->
+	  <BattleFieldCell>
+	    <Type>  ENTITYCALL  </Type>
+	    <Flags>  CELL_PRIVATE  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </BattleFieldCell>
+
+	  <!--赛道-->
+	  <track>
+	    <Type>  UINT8  </Type>
+	    <Flags>  ALL_CLIENTS  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </track>
+
+	  <!--持有金币数-->
+	  <goldNum>
+	    <Type>  UINT16  </Type>
+	    <Flags>  OWN_CLIENT  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </goldNum>
+
+	</Properties>
+
+	<ClientMethods>
+	  <!--开始游戏数秒-->
+	  <startGameSecond>
+	    <Arg>  UINT8  </Arg>
+	  </startGameSecond>
+
+	  <!--成功-->
+	  <ArriveSuccess>
+
+	  </ArriveSuccess>
+
+	  <!--失败-->
+	  <ArriveDefeat>
+	    <!--成功的实体id-->
+	    <Arg>  ENTITYID  </Arg>
+	  </ArriveDefeat>
+
+	</ClientMethods>
+
+	<BaseMethods>
+
+	  <!--请求到达-->
+	  <reqBackToMain>
+	    <!--是否重新回到房间-->
+	    <Arg>  BOOL  </Arg>
+	    <Exposed/>
+	  </reqBackToMain>
+
+	</BaseMethods>
+
+	<CellMethods>
+
+	   <!--请求到达-->
+	  <reqArriveSuccess>
+	    <Exposed/>
+	  </reqArriveSuccess>
+
+	</CellMethods>
+
+</root>

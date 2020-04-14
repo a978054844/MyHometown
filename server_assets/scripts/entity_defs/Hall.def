@@ -1,0 +1,26 @@
+<root>
+	<Properties>
+
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+
+	  <!--开始匹配-->
+	  <reqAddMatch>
+	    <Arg>  ENTITYCALL_LIST  </Arg>
+	  </reqAddMatch>
+
+	  <!--停止匹配-->
+	  <reqDelMatch>
+	    <Arg>  ENTITYCALL_LIST  </Arg>
+	  </reqDelMatch>
+
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>

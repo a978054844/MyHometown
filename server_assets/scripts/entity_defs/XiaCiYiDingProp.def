@@ -1,0 +1,39 @@
+<root>
+    <Interfaces>
+		<Interface>  GameObject  </Interface>
+	</Interfaces>
+
+	<Properties>
+	  <!--发射玩家ID-->
+	  <launchID>
+	    <Type>  ENTITYID  </Type>
+	    <Flags>  ALL_CLIENTS  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </launchID>
+
+	  <!--接受玩家ID-->
+	  <acceptID>
+	    <Type>  ENTITYID  </Type>
+	    <Flags>  ALL_CLIENTS  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </acceptID>
+
+	   <!--接受玩家-->
+	  <followAvatarCell>
+	    <Type>  ENTITYCALL  </Type>
+	    <Flags>  CELL_PRIVATE  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </followAvatarCell>
+
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>

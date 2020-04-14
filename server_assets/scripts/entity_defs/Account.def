@@ -1,0 +1,217 @@
+<root>
+	<Properties>
+
+	  <!--玩家姓名-->
+	  <Name>
+	    <Type>  UNICODE  </Type>
+	    <Flags>  BASE_AND_CLIENT  </Flags>
+	    <Persistent>  true  </Persistent>
+	  </Name>
+
+	  <!--玩家等级-->
+	  <Level>
+	    <Type>  UINT8  </Type>
+	    <Flags>  BASE_AND_CLIENT  </Flags>
+	    <Persistent>  true  </Persistent>
+	  </Level>
+
+	  <!--玩家头像-->
+	  <Icon>
+	    <Type>  UINT16  </Type>
+	    <Flags>  BASE_AND_CLIENT  </Flags>
+	    <Persistent>  true  </Persistent>
+	  </Icon>
+
+	  <!--好友列表-->
+	  <Friend_list>
+	    <Type>  FRIEND_INFO_LIST  </Type>
+	    <Flags>  BASE_AND_CLIENT  </Flags>
+	    <Persistent>  true  </Persistent>
+	  </Friend_list>
+
+	  <!--房主实体-->
+	  <MatchRoomOwner>
+	    <Type>  ENTITYCALL  </Type>
+	    <Flags>  BASE  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </MatchRoomOwner>
+
+	  <!--房间所有玩家实体-->
+	  <MatchRoomAllPlayers>
+	    <Type>  ENTITYCALL_LIST  </Type>
+	    <Flags>  BASE  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </MatchRoomAllPlayers>
+
+	</Properties>
+
+	<ClientMethods>
+	  <!--请求信息提示-->
+	  <reqMessageCall>
+	    <Arg>  UNICODE  </Arg>
+	  </reqMessageCall>
+
+	  <!--请求修改名字回调-->
+	  <reqChangeNameCall>
+	    <Arg>  UNICODE  </Arg>
+	  </reqChangeNameCall>
+
+	  <!--被请求添加好友信息-->
+	  <reqAddFriendMessage>
+	    <!--申请的entityID-->
+	    <Arg>  ENTITYID  </Arg>
+	    <!--申请的姓名-->
+	    <Arg>  UNICODE  </Arg>
+	  </reqAddFriendMessage>
+
+	  <!--更新好友列表-->
+	  <reqUpdateFriendListUI>
+
+	  </reqUpdateFriendListUI>
+
+	  <!--更新聊天记录-->
+	  <reqUpdateFriendChatting>
+	    <Arg>  DBID  </Arg>
+	    <Arg>  UNICODE  </Arg>
+	  </reqUpdateFriendChatting>
+
+	  <!--被请求加入房间-->
+	  <reqEnterMatchRoomMessage>
+	    <!--申请的实体ID-->
+	    <Arg>  ENTITYID  </Arg>
+	    <!--申请的姓名-->
+	    <Arg>  UNICODE  </Arg>
+	  </reqEnterMatchRoomMessage>
+
+	  <!--更新房间UI-->
+	  <reqUpdateMatchRoomUI>
+	    <!--房间所有的玩家信息-->
+	    <Arg>  FRIEND_INFO_LIST  </Arg>
+	  </reqUpdateMatchRoomUI>
+
+	  <!--更新房间聊天信息-->
+	  <reqUpdateMatchRoomChatting>
+	    <!--玩家姓名-->
+	    <Arg>  UNICODE  </Arg>
+	    <!--发送的信息-->
+	    <Arg>  UNICODE  </Arg>
+	  </reqUpdateMatchRoomChatting>
+
+	  <!--显示正在匹配计时-->
+	  <reqShowMatching>
+	    <!--是否展示匹配UI-->
+	    <Arg>  UNICODE  </Arg>
+	  </reqShowMatching>
+
+	  <!--进入战场空间-->
+	  <enterBattleSpace>
+
+	  </enterBattleSpace>
+
+	  <!--返回主场景-->
+	  <backToMain>
+
+	  </backToMain>
+
+	</ClientMethods>
+
+	<BaseMethods>
+	  <!--请求修改名字-->
+	  <reqChangeName>
+	    <Arg>  UNICODE  </Arg>
+	    <Exposed/>
+	  </reqChangeName>
+
+      <!--添加好友-->
+	  <addFriend>
+	    <Arg>  UNICODE  </Arg>
+	    <Exposed/>
+	  </addFriend>
+
+      <!--删除好友-->
+	  <delFriend>
+	    <Arg>  UNICODE  </Arg>
+	    <Exposed/>
+	  </delFriend>
+
+	  <!--主场景加载完成-->
+	  <mainSceneLoaded>
+	    <Exposed/>
+	  </mainSceneLoaded>
+
+	  <!--请求添加好友信息回调-->
+	  <reqAddFriendMessageCall>
+	    <!--申请的entityID-->
+	    <Arg>  ENTITYID  </Arg>
+	    <!--是否同意 True or False-->
+	    <Arg>  UNICODE  </Arg>
+	    <Exposed/>
+	  </reqAddFriendMessageCall>
+
+	  <!--发送聊天信息-->
+	  <sendChattingMessage>
+	    <Arg>  DBID  </Arg>
+	    <Arg>  UNICODE  </Arg>
+	    <Exposed/>
+	  </sendChattingMessage>
+
+	  <!--创建匹配房间-->
+	  <reqCreateMatchRoom>
+	    <Exposed/>
+	  </reqCreateMatchRoom>
+
+	  <!--邀请好友加入-->
+	  <reqAddFriendToMatchRoom>
+	    <Arg>  DBID  </Arg>
+	    <Exposed/>
+	  </reqAddFriendToMatchRoom>
+
+	  <!--进入匹配房间-->
+	  <reqEnterMatchRoom>
+	    <!--邀请你的实体ID-->
+	    <Arg>  ENTITYID  </Arg>
+	    <!--邀请你的姓名-->
+	    <Arg>  UNICODE  </Arg>
+	    <Exposed/>
+	  </reqEnterMatchRoom>
+
+      <!--离开匹配房间-->
+	  <reqExitMatchRoom>
+	    <Exposed/>
+	  </reqExitMatchRoom>
+
+	  <!--删除匹配房间-->
+	  <reqDeleteMatchRoom>
+	    <Exposed/>
+	  </reqDeleteMatchRoom>
+
+	  <!--发送聊天信息到房间-->
+	  <sendMessageToMatchRoom>
+	    <!--姓名-->
+	    <Arg>  UNICODE  </Arg>
+	    <!--发送的信息-->
+	    <Arg>  UNICODE  </Arg>
+	    <Exposed/>
+	  </sendMessageToMatchRoom>
+
+	  <!--开始匹配-->
+	  <reqStartMatch>
+	    <Exposed/>
+	  </reqStartMatch>
+
+	  <!--停止匹配-->
+	  <reqStopMatch>
+	    <Exposed/>
+	  </reqStopMatch>
+
+	  <!--将客户端给予Avatar-->
+	  <reqGiveClientToAvatar>
+	    <Exposed/>
+	  </reqGiveClientToAvatar>
+
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>

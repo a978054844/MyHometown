@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b49ab080-4a82-4636-8fcb-1328e71fc786" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VMeDO6zSAB5BkE27NHBvKIOXXr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cell" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mac\Desktop\kbengine-1.3.12\server_assets\scripts\entity_defs" />
+      <recent name="C:\Users\mac\Desktop\kbengine-1.3.12\server_assets\scripts\base" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b49ab080-4a82-4636-8fcb-1328e71fc786" name="Default Changelist" comment="" />
+      <created>1577067272078</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577067272078</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="455" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577709565533">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="455" y="252" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1577709565533" />
+    <state x="462" y="80" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580963624104">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="462" y="80" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.760@0.0.1280.760" timestamp="1580963624104" />
+    <state x="413" y="168" key="FileChooserDialogImpl" timestamp="1582259204871">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="344" y="139" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1581046262087" />
+    <state x="413" y="168" key="FileChooserDialogImpl/0.0.1536.920@0.0.1536.920" timestamp="1582259204871" />
+    <state x="156" y="42" key="SettingsEditor" timestamp="1577067833890">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="156" y="42" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1577067833890" />
+    <state x="474" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1582257267102">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="395" y="249" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1581046237479" />
+    <state x="474" y="301" key="com.intellij.ide.util.TipDialog/0.0.1536.920@0.0.1536.920" timestamp="1582257267102" />
+  </component>
+</project>

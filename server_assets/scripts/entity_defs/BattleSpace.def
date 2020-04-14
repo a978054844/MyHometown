@@ -1,0 +1,42 @@
+<root>
+	<Properties>
+
+	  <!--角色对应所有Account-->
+	  <AccountList>
+	    <Type>  ENTITYCALL_LIST  </Type>
+	    <Flags>  BASE  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </AccountList>
+
+	  <!--所有角色-->
+	  <baseAvatars>
+	    <Type>  PY_DICT  </Type>
+	    <Flags>  BASE  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </baseAvatars>
+
+	   <!--所有角色-->
+	  <cellAvatars>
+	    <Type>  PY_DICT  </Type>
+	    <Flags>  CELL_PRIVATE  </Flags>
+	    <Persistent>  false  </Persistent>
+	  </cellAvatars>
+
+
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+
+	</BaseMethods>
+
+	<CellMethods>
+	  <!--开始游戏数秒-->
+	  <InitGold>
+	    <Arg>  UINT8  </Arg>
+	  </InitGold>
+	</CellMethods>
+
+</root>

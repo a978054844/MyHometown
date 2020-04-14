@@ -1,0 +1,37 @@
+<root>
+
+    <BOOL>      UINT16      </BOOL>
+    <DBID>      UINT64		</DBID>
+    <ENTITYID>  UINT32  </ENTITYID>
+
+    <FRIEND_INFO>	FIXED_DICT
+        <implementedBy>FRIEND_INFO.friend_info_inst</implementedBy>
+        <Properties>
+            <dbid>
+                <Type>	DBID	</Type>
+            </dbid>
+            <name>
+                <Type>	UNICODE	</Type>
+                <DatabaseLength> 256 </DatabaseLength>
+            </name>
+            <level>
+                <Type>	UINT16	</Type>
+            </level>
+            <status>
+                <Type>	BOOL	</Type>
+            </status>
+            <icon>
+                <Type>	UINT16	</Type>
+            </icon>
+        </Properties>
+    </FRIEND_INFO>
+
+    <FRIEND_INFO_LIST>
+        ARRAY 	<of>  FRIEND_INFO </of>
+    </FRIEND_INFO_LIST>
+
+
+    <ENTITYCALL_LIST>
+        ARRAY   <of>  ENTITYCALL  </of>
+    </ENTITYCALL_LIST>
+</root>
